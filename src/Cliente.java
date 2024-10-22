@@ -1,9 +1,9 @@
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Cliente {
     private String nome;
     private String cpf;
-    private Date aniversario;
+    private LocalDate aniversario;
 
     public String getNome() {
         return nome;
@@ -21,11 +21,20 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public Date getAniversario() {
+    public LocalDate getAniversario() {
         return aniversario;
     }
 
-    public void setAniversario(Date aniversario) {
+    public void setAniversario(LocalDate aniversario) {
         this.aniversario = aniversario;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", aniversario=" + aniversario +
+                '}';
     }
 }

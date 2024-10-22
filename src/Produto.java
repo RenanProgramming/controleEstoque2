@@ -35,4 +35,14 @@ public class Produto {
     public void setCodigo_barras(int codigo_barras) {
         this.codigo_barras = codigo_barras;
     }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "nome='" + nome + '\'' +
+                ", qte_estoque=" + qte_estoque +
+                ", valor_unitario=" + valor_unitario +
+                ", codigo_barras=" + codigo_barras +
+                '}';
+    }
 }
